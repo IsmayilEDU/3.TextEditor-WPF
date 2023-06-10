@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="bold.png" />
+    <None Remove="italic.png" />
+    <None Remove="underline.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="icons\bold.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="icons\italic.png" />
+    <Resource Include="icons\underline.png" />
+  </ItemGroup>
+
+</Project>
